@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Gavo dev portlofio for future developments",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoAgt/portfolio-html.git"
+  },
+  "author": "gavodev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoAgt/portfolio-html/issues"
+  },
+  "homepage": "https://github.com/GustavoAgt/portfolio-html#readme"
+}

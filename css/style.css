@@ -64,7 +64,7 @@ body {
   letter-spacing: 3rem;
   animation: moveInRight;
   animation-duration: 3s;
-  animation-timing-funciton: ease-out;
+  animation-timing-function: ease-out;
 }
 
 .heading-aboutme {
