@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/grid.min.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
   <header class="header">
     <div class="header-text-box">
       <h1 class="heading-primary">
-        <span class="heading-name">Gustavo</span>
+        <span class="heading-name">G<span id="heading-name-subtract">ust</span>avo</span>
         <!-- <span class="heading-description">Developer, Animal Lover, Traveler</span> -->
         <span class="heading-aboutme">
           I'm passionate about tech and coding, I love to write code using Java, Spring, Angular and Javascript.
@@ -26,8 +26,43 @@
     </div>
   </header>
 
+  <main>
+    <section class="section__projects">
 
+      <div class="ui grid">
 
+        <div class="doubling one column row">
+          <div class="column">
+            <h1 class="section__projects--title">Title</h1>
+          </div>
+        </div>
+        <div class="doubling two column row">
+          <div class="column">
+            <div class="composition">
+              <img class="composition__photo composition__photo--p1" src="assets/imgs/movply.png" alt="java">
+            </div>
+            <div class="composition">
+              <img class="composition__photo composition__photo--p2" src="assets/imgs/movply.png" alt="java">
+            </div>
+            <div class="composition">
+              <img class="composition__photo composition__photo--p3" src="assets/imgs/movply.png" alt="java">
+            </div>
+          </div>
+          <div class="column">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
+<script>
+  let headingPrimarySubstract = document.getElementById("heading-name-subtract");
+
+  setTimeout(function () {
+    headingPrimarySubstract.style.visibility = "hidden";
+    headingPrimarySubstract.style.position = "absolute";
+  }, 5000);
+</script>
 
 </html>
