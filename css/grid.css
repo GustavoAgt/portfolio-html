@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 5rem auto 5rem;
+    grid-column-gap: 5rem;
+    grid-row-gap: 6rem;
+}
+
+.text-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: .5rem;
+}
+
+.title-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+    font-size: 5rem;
+}
+
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/4;
+}
