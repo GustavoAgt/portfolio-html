@@ -27,7 +27,7 @@ body {
   background-image: linear-gradient(to bottom right,
     rgba(126, 213, 111, 0.8),
     rgba(40, 80, 110, 0.7)),
-    url("https://images.unsplash.com/photo-1530464038957-9495e6903a19?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b492f1ef143ac3d2d690298032252846&auto=format&fit=crop&w=1350&q=80");
+    url("../assets/imgs/kurama.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
