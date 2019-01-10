@@ -1,5 +1,4 @@
 .container {
-<<<<<<< HEAD
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-template-rows: 20rem;
@@ -27,15 +26,6 @@
   /*grid-column: 8/11;*/
 }
 
-@media only screen and (max-width: 600px) {
-}
-=======
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 5rem auto 5rem;
-    grid-gap: .8rem;
-    grid-row-gap: 6rem;
-}
 
 .text-container {
     display: grid;
@@ -62,4 +52,4 @@
     align-items: center;
     grid-column: 2/4;
 }
->>>>>>> 17092f38b794311fdc164de17cfb1dd3a6e538eb
+
