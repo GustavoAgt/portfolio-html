@@ -7,6 +7,7 @@
 }
 
 html {
+  --color-white: #fff;
   font-size: 62.5%;
 }
 
@@ -16,21 +17,23 @@ body {
   line-height: 1.7;
   font-weight: 400;
   padding: 3rem;
-  color: #fff;
+  color: var(--color-white);
   box-sizing: border-box;
 }
 
 .pacifico {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
 .header {
   height: 95vh;
 
   /*Photo by JuniperPhoton on Unsplash*/
-  background-image: linear-gradient(to bottom right,
-    rgba(126, 213, 111, 0.8),
-    rgba(40, 80, 110, 0.7)),
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 80, 110, 0.7)
+    ),
     url("../assets/imgs/kurama.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,18 +148,33 @@ body {
   background-color: #f7f7f7;
   color: #000;
   height: 150vh;
+  padding: 3rem 0 0 0;
 }
 
 .section_project--about-projects {
   color: #fff;
-  background-image: linear-gradient(to bottom right,
-  rgba(126, 213, 111, 0.8),
-  rgba(40, 80, 110, 0.7));
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(126, 213, 111, 0.8),
+    rgba(40, 80, 110, 0.7)
+  );
   text-align: center;
   letter-spacing: 2rem;
   font-size: 3rem;
-  margin-bottom: 10rem;
-  padding: 3rem 0rem 3rem 0rem;
+
+  padding: 3rem 0 3rem 0;
+  margin:0 auto 5rem auto;
+}
+
+.section__project--card {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(126, 213, 111, 0.5),
+    rgba(40, 80, 110, 0.8)
+  );
+
+  padding-bottom: 11rem;
+  clip-path: polygon(4% 0, 100% 0%, 97% 100%, 0% 100%);
 }
 
 .section__projects--title-project {
@@ -164,17 +182,19 @@ body {
   font-weight: 700;
   letter-spacing: 1rem;
   text-transform: uppercase;
-  color: #30b45c;
+  color: var(--color-white);
   margin-bottom: 5rem;
 }
 
 .section__projects--title-about {
+  color: var(--color-white);
   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .section__projects--content-about {
+  color: var(--color-white);
   display: inline-block;
   text-align: justify;
   font-size: 1.7rem;
@@ -198,7 +218,7 @@ body {
 }
 
 .composition__photo:hover {
-  outline: 1.5rem solid #55c57a;
+  outline: 1.5rem solid var(--color-white);
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   object-fit: cover;
@@ -211,7 +231,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .composition__photo:hover {
-    outline: .5rem solid #55c57a;
+    outline: 0.5rem solid #55c57a;
     object-fit: cover;
   }
 
