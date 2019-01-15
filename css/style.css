@@ -20,15 +20,17 @@ body {
   box-sizing: border-box;
 }
 
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
 .header {
   height: 95vh;
 
   /*Photo by JuniperPhoton on Unsplash*/
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 80, 110, 0.7)
-    ),
+  background-image: linear-gradient(to bottom right,
+    rgba(126, 213, 111, 0.8),
+    rgba(40, 80, 110, 0.7)),
     url("../assets/imgs/kurama.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,9 +143,20 @@ body {
 
 .section__projects {
   background-color: #f7f7f7;
-  padding: 25rem 0;
   color: #000;
   height: 150vh;
+}
+
+.section_project--about-projects {
+  color: #fff;
+  background-image: linear-gradient(to bottom right,
+  rgba(126, 213, 111, 0.8),
+  rgba(40, 80, 110, 0.7));
+  text-align: center;
+  letter-spacing: 2rem;
+  font-size: 3rem;
+  margin-bottom: 10rem;
+  padding: 3rem 0rem 3rem 0rem;
 }
 
 .section__projects--title-project {
@@ -152,6 +165,7 @@ body {
   letter-spacing: 1rem;
   text-transform: uppercase;
   color: #30b45c;
+  margin-bottom: 5rem;
 }
 
 .section__projects--title-about {
@@ -175,34 +189,19 @@ body {
 }
 
 .composition__photo {
-  width: 36%;
+  width: 80%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  position: relative;
   border-radius: 0.2rem;
   z-index: 1;
   transition: all 0.2;
   outline-offset: 2rem;
 }
 
-.composition__photo--p1 {
-  left: 5rem;
-  top: -2rem;
-}
-
-.composition__photo--p2 {
-  right: 0;
-  top: 2rem;
-}
-
-.composition__photo--p3 {
-  left: -5rem;
-  top: -2rem;
-}
-
 .composition__photo:hover {
   outline: 1.5rem solid #55c57a;
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  object-fit: cover;
   z-index: 2;
 }
 
@@ -211,10 +210,14 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-}
+  .composition__photo:hover {
+    outline: .5rem solid #55c57a;
+    object-fit: cover;
+  }
 
-.text__about--content {
-
+  .text-about {
+    margin-top: 15%;
+  }
 }
 
 @keyframes moveInBottom {
